@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo Demo - Cassino Visual</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1 class="title">🐯 Cassino Demo</h1>
+
+    <div id="login-screen">
+      <h2>Entrar</h2>
+      <input type="text" placeholder="Usuário">
+      <input type="password" placeholder="Senha">
+      <button onclick="fakeLogin()">Entrar</button>
+    </div>
+
+    <div id="game-screen" style="display:none;">
+      <h2>Slots Disponíveis</h2>
+
+      <div class="slot-list">
+        <div class="slot-card" onclick="openSlot()">
+          <img src="img/mascote.png" width="120">
+          <p>Slot Tigrinho Demo</p>
+        </div>
+      </div>
+
+      <button class="back-btn" onclick="showLogin()">Sair</button>
+    </div>
+
+    <div id="slot-screen" style="display:none;">
+      <h2>🎰 Slot Tigrinho Demo</h2>
+
+      <div class="slot-machine">
+        <div class="reel" id="r1">🐯</div>
+        <div class="reel" id="r2">🍒</div>
+        <div class="reel" id="r3">⭐</div>
+      </div>
+
+      <button onclick="spin()">Girar</button>
+      <button class="back-btn" onclick="backToMenu()">Voltar</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

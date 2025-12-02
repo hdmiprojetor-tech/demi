@@ -1,0 +1,66 @@
+body {
+  background: #111;
+  color: #fff;
+  font-family: Arial;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 450px;
+  margin: auto;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 80%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  padding: 12px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 12px;
+  background: #ffb300;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.slot-list {
+  display: flex;
+  justify-content: center;
+}
+
+.slot-card {
+  background: #222;
+  padding: 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.slot-machine {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.reel {
+  width: 70px;
+  height: 70px;
+  margin: 5px;
+  background: #333;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
